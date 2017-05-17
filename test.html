@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <title>מבחן</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //פונקציה המקבלת 2 מספרים ומחזירה את ממוצע המספרים הזוגיים ביניהם
+        // (-; יש בעיה קלה שאם המספר הראשון זוגי הוא מתחיל לספור ממנו. אין לי כח לסדר את זה
+        function getEvenAvg(num1, num2) {
+            for (i = num1 + (num1 % 2), even = 0, sum = 0; i < num2; i += 2, even++ , sum += i) {
+            }
+            evenAvg = sum / even;
+            return evenAvg;
+        }
+    </script>
+
+
+</body>
+
+</html>
