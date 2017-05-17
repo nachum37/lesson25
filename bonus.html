@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <title>שאלת בונוס</title>
+    <style>
+        body {
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //פונקציה המקבלת מספר והאם למיינו בסדר עולה או יורד. הצג את המספר ממויין
+        function getNumSorted(num, ascend) {
+            sum = "";
+            progress = 1;
+            digit = 0;
+            end = 9;
+            if (!ascend) {
+                progress = -1;
+                digit = 9;
+                end = 0;
+            }
+            for (; (digit != end); digit += progress) {
+                for (i = num; i > 0; i = parseInt(i /= 10)) {
+                    if ((i % 10) == digit) {
+                        sum += digit;
+                    }
+                }
+            }
+            return sum;
+        }
+    </script>
+
+
+</body>
+
+</html>
